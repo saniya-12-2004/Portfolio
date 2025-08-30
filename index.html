@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title >Portfolio</title>
+
+  <!-- bootstarap-reponsive -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+    crossorigin="anonymous"
+  />
+
+
+  <!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  
+
+<!-- js -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"
+  ></script>
+
+
+  <!-- font-->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+
+
+
+
+  <style>
+   
+   body {
+      background-color: #330033;
+      margin: 0%;
+      
+    }
+
+
+   html{
+  scroll-behavior: smooth;
+  
+    }
+
+
+section
+{
+
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+scroll-margin-top:90px;
+}
+
+
+
+
+
+
+    /* navbar */
+    .nav-link {
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+      color: #fff;
+    }
+
+    .nav-link:hover {
+      background-color: #66ffff;
+      border-radius: 20px;
+      color: black;
+    }
+
+    .navbar {
+      background-color: #330033;
+      color: white;
+      height: 90px;
+    }
+
+    .navbar-brand {
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+      color: #fff;
+    }
+.navbar-brand:hover{
+  background-color: #66ffff;
+      border-radius: 20px;
+      color: black;
+}
+
+
+
+
+
+
+    /* Home section */
+  #img {
+  min-height: auto;         
+  padding: 0px 20px;       
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+scroll-margin-top: 220px;
+
+
+}
+
+.offset
+{
+  height: 200px;
+  margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+  #img {
+    min-height: auto;      
+    padding: 0;             
+  }
+}
+    .btn {
+      display: inline-block;
+      padding: 12px 28px;
+      background-color: #66ffff;
+      color: black;
+      border-radius: 30px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      margin-top: 15px;
+    }
+
+    .btn:hover {
+      background-color: #ffcc00;
+      color:black !important;
+    }
+
+    /* Image responsive */
+    img.img-fluid {
+      margin-top: 30px;
+    }
+
+    
+    .profile-container {
+      position: relative;
+      width: 350px;
+      height: 350px;
+      margin: auto;
+    }
+
+    .profile-container img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid #fff;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+      position: relative;
+      z-index: 2;
+    }
+
+    
+.profile-container {
+  position: relative;
+  width: 100%;
+  max-width: 300px; 
+  aspect-ratio: 1/1; 
+  margin: auto;
+}
+
+.profile-container img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #fff;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2;
+}
+
+
+.profile-container::before {
+  content: "";
+  position: absolute;
+  inset: -5%; 
+  background-color: #66ffff;
+  border-radius: 50%;
+  z-index: 1;
+  animation: float 6s ease-in-out infinite;
+}
+
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+    .social-links a i {
+      color: white; 
+      font-size: 2.0rem; 
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .social-links a:hover i {
+      color: #66ffff; 
+      transform: scale(1.2); 
+    }
+
+    /* about */
+    #about {
+      background-color: #005580;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+
+    #about h2 {
+      color: #66ffff;
+      font-weight: bold;
+     margin-top:  0px;
+    }
+
+    #about h2::after {
+      content: "";
+      display: block;
+      width: 70px;
+      height: 3px;
+      background: #66ffff;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    #about p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: white;
+      max-width: 900px;
+      margin: 0 auto 40px auto;
+    }
+
+   
+    .info-card {
+      background:  #330033;
+      border-radius: 16px;
+      padding: 15px 10px; /* kam padding */
+  margin: 3px;
+  font-size: 0.8rem; 
+  margin-bottom: 8px;
+      color: white;
+      
+      transition: color 0.3s ease;
+    }
+
+    .info-card h5 {
+      font-size: 1rem;
+  margin-bottom: 6px;
+      font-weight: bold;
+      
+      color:white;
+    }
+
+    .info-card p {
+        font-size: 0.85rem;
+
+      color: white;
+      margin: 0;
+      word-wrap: break-word;
+    }
+
+
+    .info-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      background:#66ffff;
+    }
+
+    .info-card:hover i,
+    .info-card:hover h5,
+    .info-card:hover p {
+      color: black!important;;
+    }
+
+    /* Qualification */
+    .qualification {
+      padding: 90px 20px;
+      max-width: 700px;
+      margin: 0 auto ;
+
+    }
+
+    .qualification h2 {
+      text-align: center;
+      color: white;
+      margin-bottom:10px;
+      font-weight: bold;
+    }
+    .qualification-item {
+      background: #005580;
+      padding: 15px 20px;
+      margin-bottom: 10px;
+      border-left: 4px solid white;
+      border-radius: 8px;
+      text-align: left;
+    }
+
+    .qualification-item h3 {
+      color:white;
+      font-size: 1.2rem;
+      margin-bottom:0px;
+    }
+     .qualification p{
+      color:white;
+      
+    }
+
+    .qualification-item:hover {
+  background-color: #66ffff; /* light blue background on hover */
+  box-shadow: 0 8px 20px rgba(102, 255, 255, 0.4);
+  border-left-color: black; /* border left color change */
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, border-left-color 0.3s ease;
+}
+
+.qualification-item:hover h3,
+.qualification-item:hover p {
+  color: black; /* text color change on hover */
+  transition: color 0.3s ease;
+}
+
+
+
+/* skill */
+.skills-section {
+  width: 90%;
+  margin: 50px auto;
+  padding:0px 0px;
+  background:#005580;
+  border-radius: 16px;
+  box-shadow: 0px 6px 25px rgba(0,0,0,0.15);
+ height: auto;
+ margin-top: 40px;
+}
+
+.skills-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #66ffff;;
+}
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr; /* ek column */
+    gap: 25px;
+  }
+}
+
+.skill {
+  margin-bottom: 25px;
+padding-left: 20px;    
+  
+  padding-right: 20px;    
+
+}
+
+.skill-name {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-bar {
+  width: 100%;
+  background: white;
+  height: 14px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 8px 0;
+}
+
+.skill-per {
+  height: 100%;
+  width:0;
+  background: 
+    #66ffff;
+ 
+  background-size: 40px 40px;
+  border-radius: 10px;
+  animation: moveStripes 1s linear infinite;
+  transition: width 2s ease-in-out;
+}
+
+@keyframes moveStripes {
+  0% { background-position: 0 0; }
+  100% { background-position: 40px 0; }
+}
+
+.skill-per.html { width: 90%; }
+.skill-per.css { width: 85%; }
+.skill-per.js { width: 75%; }
+.skill-per.react { width: 70%; }
+
+/* ------- Circular Progress ------- */
+.circle-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.circle {
+  position: relative;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background: conic-gradient(#ff6a00 0deg, #e0e0e0 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  top: -20px;
+ margin: auto;
+}
+
+.circle::before {
+  content: attr(data-label);
+  position: absolute;
+  bottom: -20px;
+  font-size: 15px;
+  font-weight: 600;
+  color:white;
+}
+
+.circle span {
+  position: absolute;
+}
+
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  margin: 20px 0 20px 30px;
+  max-width: 520px;
+  margin-left: -10px;
+}
+
+.project-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ✅ Overlay puri image cover kare */
+.project-card .overlay {
+  position: absolute;
+  top: 0;          /* top se start */
+  left: 0;         /* left se start */
+  right: 0;        /* right tak stretch */
+  bottom: 0;       /* bottom tak stretch */
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  display: flex;              /* content ko center karne ke liye */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;      /* ✅ hover par puri image cover karega */
+}
+
+.project-card .overlay h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+    
+.project-buttons {
+  display: flex;              /* side by side */
+  gap: 15px;                  /* buttons ke beech space */
+  flex-wrap: wrap;             /* agar mobile chhota ho to neeche aa jaye nicely */
+  justify-content: center;     /* center me align */
+  margin-top: 12px;
+}
+
+.project-buttons .btn {
+  flex: 0 0 auto;              /* thoda responsive size */
+  min-width: 120px; 
+  border-radius: 25px; 
+  padding: 8px 18px; 
+  margin: 0 5px;      /* minimum button size */
+}
+    
+
+
+
+
+/* Contact Section */
+#contact {
+  background: #005580;
+  padding: 0px 20px ;
+  margin: 0;
+  min-height: auto;
+  font-family: 'Poppins', sans-serif;
+  padding-top: -10px;
+}
+
+
+
+#contact h2 {
+
+  color: #66ffff;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+#contact form {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  border-color: #330033;
+  color: #330033;
+  width: 100%;          
+
+}
+
+#contact form input,
+#contact form textarea {
+  background: rgba(255,255,255,0.15);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 15px;
+  width: 100%;
+  margin-bottom:31px;
+}
+
+#contact form input::placeholder,
+#contact form textarea::placeholder {
+  color: white;
+}
+
+form button {
+  background: #330033;
+  color: #000;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #330033;
+}
+
+form button:hover {
+  background:#330033;
+  box-shadow: 0 0 20px #330033;
+  transform: scale(1.05) translateY(-3px);  /* bounce + zoom */
+}
+
+
+.contact-info {
+  background: rgba(255,255,255,0.08);
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  color: white;
+  margin-bottom:0px;
+}
+
+.contact-info h5 {
+  color: #ffcc00;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+
+.contact-info .info-item {
+  padding: 12px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.contact-info .info-item:hover {
+  background: rgba(102, 255, 255, 0.1); 
+  transform: translateY(-5px);          
+  box-shadow: 0 5px 15px rgba(102, 255, 255, 0.4); 
+}
+
+.contact-info .info-item:hover i {
+  color: #ffcc00; 
+  transform: scale(1.2);
+}
+
+.contact-info .info-item:hover h6,
+.contact-info .info-item:hover p {
+  color: #330033;
+}
+#contact form input:focus,
+#contact form textarea:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2); 
+  color: white;
+  box-shadow: 0 0 5px #330033;
+}
+
+.contact-info .social-icons a {
+  font-size: 26px;
+  margin-right: 15px;
+  color: #330033;
+  transition: 0.3s;
+}
+.contact-info .social-icons a:hover {
+  color: #330033;
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 768px) {
+  #contact h2 {
+    font-size: 26px;
+  }
+  .contact-info {
+    margin-top: 20px;
+  }
+}
+
+
+.nav-link.active {
+  background-color: #66ffff;
+  border-radius: 20px;
+  color: black !important;
+}
+
+.section-title {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .section-title.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+</style>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#" ><b>MyPortfolio</b></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu"
+     style="background-color: #fff; color: #000; font-size:large; border-radius: 10px;" >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#img">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#qualification">Qualifiaction</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+
+         <li class="nav-item"><a class="nav-link" href="#project">Projects</a></li>
+
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+ 
+
+ 
+   <!--  Home Section -->
+  <div class="offset"></div>
+  <section id="img" class="py-5" style="background-color: #330033">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-5 text-center mb-4 mb-md-0">
+          <div class="profile-container">
+            <img src="image/sanu1.jpg" alt="Saniya Mulik" />
+          </div>
+        </div>
+        <div class="col-md-7 text-center text-md-start">
+          <h3 style="color: white">Hello, It's Me</h3>
+          <h1
+            style="
+              font: 300;
+              font-weight: bold;
+              font-family: constantia;
+              color: white;
+            "
+          >
+            SANIYA MULIK
+          </h1>
+          <h3 style="color: white">
+            And I'm a <span class="typing" style="color: #66ffff"></span>
+          </h3>
+          <p style="color: white">
+            Full Stack Developer passionate about building responsive and
+            visually appealing websites.
+          </p>
+
+          <div class="social-links mb-3">
+            <a
+              href="https://github.com/saniya-12-2004"
+              target="_blank"
+              class="me-3 text-dark fs-4"
+              ><i class="fab fa-github"></i
+            ></a>
+            &nbsp;&nbsp;
+            <a
+              href="https://www.linkedin.com/in/saniya-mulik"
+              target="_blank"
+              class="me-3 text-dark fs-4"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            &nbsp;&nbsp;
+            <a
+              href="https://instagram.com/saniya_m_2004"
+              target="_blank"
+              class="text-dark fs-4"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </div>
+          &nbsp;&nbsp;&nbsp;<a
+            href="image/sanucv.pdf"
+            class="btn"download
+            
+            >Download CV</a
+          ><a href="#contact" class="btn btn-light ms-3">Contact Me</a>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+   <br><br>   <br><br>
+
+  <section id="about" class="py-5">
+    <div class="container text-center">
+      <h2 class=" section-title mb-4">About Me</h2>
+
+   
+      <p>
+        Hello! I am <b>Saniya Mulik</b>, a passionate <b>Full Stack Developer</b>
+        and <b>Web Designer</b>. I love creating modern, responsive and
+        user-friendly websites that deliver real value. I have a good grasp of
+        HTML, CSS, Bootstrap, and JavaScript, which help me build responsive and
+        user-friendly interfaces.
+        Along with web technologies, I have learned C and C++, which have
+        strengthened my problem-solving and programming skills. I’m also
+        familiar with SQL, allowing me to work with databases efficiently. 
+     
+      </p>
+
+     
+      <div class="row justify-content-center mt-5">
+        <div class="col-12 col-md-4">
+          <div class="info-card">
+            <i class="fas fa-user"></i>
+            <h5>Marital Status</h5>
+            <p>Single</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="info-card">
+            <i class="fas fa-map-marker-alt"></i>
+             <h5>Location</h5>
+            <p><a href="https://maps.app.goo.gl/Rc7d96xaEUgCqU6H8?g_st=ac" style="color: inherit; text-decoration:none;">Pune, India</a></p>
+
+            
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="info-card">
+            <i class="fas fa-envelope"></i>
+            <h5>Email</h5>
+<p><a href="https://mail.google.com/mail/u/0/#inbox" style="color: inherit; text-decoration:none;">muliksaniya6@gmail.com</a></p>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Qualification -->
+   <br>
+  <section class="qualification" id="qualification">
+    <h2 class="section-title">Qualification</h2>
+    <div class="qualification-item">
+      <h3>Bachelor of Science in Computer Science</h3><br>
+      <p><b>Shivaji University,Kolhapur,       2022 -2025 </b></p>
+         
+         <P>Grade:A+</P>
+    </div>
+    <div class="qualification-item">
+      <h3>HSC</h3>
+      <p><b>R.K.Junior College,Gadhinglaj, 2020 - 2022</p></b>
+      <p>Percentage:72%</P>
+    </div>
+    <div class="qualification-item">
+      <h3>SSC</h3>
+      <p><b>Jagruti HighSchool, 2019 - 2020</p></b>
+            <P>Percentage:86.40%</P>
+
+    
+    </div>
+  </section>
+
+
+<br>
+  <!-- //skill -->
+  <section class="skills-section" id="skills">
+  <br><h2 class="section-title"  color: #66ffff;><b>My Skills</b></h2>
+<br>
+  <div class="skills-container">
+    
+    <!--  Bars -->
+    <div>
+      <div class="skill">
+       <h2 style="color: #fff;">Technical Skill</h2>
+        <div class="skill-name">C <span>85%</span></div>
+        <div class="skill-bar">
+          <div class="skill-per html"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">SQL <span>90%</span></div>
+        <div class="skill-bar">
+          <div class="skill-per css"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">JavaScript <span>75%</span></div>
+        <div class="skill-bar">
+          <div class="skill-per js"></div>
+        </div>
+      </div>
+
+      <div class="skill">
+        <div class="skill-name">Bootstrap <span>90%</span></div>
+        <div class="skill-bar">
+          <div class="skill-per react"></div>
+        </div>
+ </div>
+
+ <div class="skill">
+        <div class="skill-name">Java<span>80%</span></div>
+        <div class="skill-bar">
+          <div class="skill-per react"></div>
+        </div>
+ </div>
+
+    </div>
+
+    <!--  Circles -->
+<div>
+  <h2 style="color:white; text-align: center; margin-bottom: 20px;">Soft Skills</h2>
+  <br><div class="circle-container">
+    <div class="circle" data-percent="90" data-label="
+Communication"><span>0%</span></div>
+    <div class="circle" data-percent="80" data-label="Problem Solving"><span>0%</span></div>
+    <div class="circle" data-percent="80" data-label="Adaptability"><span>0%</span></div>
+  </div>
+</div>
+
+</section>
+
+
+
+<br>
+<!-- Project Section -->
+ <section id="project" class="py-5">
+     <div class="container text-center">
+    <!-- Section Title -->
+    <br><h1 class="section-title mb-4" style="color:  #66ffff; font-size:xx-large;"><b>Projects</b></h2><br>
+
+
+<div class="project-card" >
+  <div class="project-image">
+    <img src="image/Ho.jpg" alt="Project" />
+  </div>
+  <div class="overlay">
+    <h3>Real Estate Management System</h3>
+<p>
+        This web-based solution is designed to provide users with an intuitive and 
+        seamless experience to explore property listings, featuring easy navigation, 
+        detailed property information, and search options to help users find their 
+        perfect home effortlessly.
+      </p>
+  <div class="project-buttons">
+    <a href="https://github.com/saniya-12-2004/Real-_Estate_Management" class="btn btn-primary">View Code</a>
+    <a href="image/project_vedio.mp4" class="btn btn-secondary">Live Demo</a>
+  </div>
+</div>
+  </div>
+     </div>
+</section>
+
+
+<br>
+       
+
+
+<!-- ✅ Contact Section -->
+<section id="contact">
+  <div class="container">
+    <br><h2 class="text-center section-title">Contact Me</h2>
+    <div class="row g-4 align-items-stretch">
+      
+      <!-- Left -->
+      <div class="col-md-6">
+        <form id="contactForm">
+          <div class="mb-3">
+           
+            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" id="email" class="form-control" placeholder="Your Email" required>
+          </div>
+          <div class="mb-3">
+            <textarea id="message" class="form-control" rows="5" placeholder="Your Message" style=" height: 50px;" required></textarea>
+          </div>
+           <button type="submit" class="btn btn-warning w-100">Send Message</button>
+        </form>
+
+        </div>
+
+      <!-- Right  -->
+      <div class="col-md-6">
+        <div class="contact-info h-60">
+          <h5>Get in Touch</h5>
+
+          <div class="info-item d-flex align-items-center">
+            <i class="bi bi-envelope-fill"></i>
+            <div class="ms-3">
+              <h6>Email</h6>
+
+<p><a href="https://mail.google.com/mail/u/0/#inbox" style="color: inherit; text-decoration:none;">muliksaniya6@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="info-item d-flex align-items-center">
+            <i class="bi bi-telephone-fill"></i>
+            <div class="ms-3">
+              <h6>Phone</h6>
+<p>
+    <a href="tel:+91 8767653587"
+       style="color: #0078d7; text-decoration: none; font-size: 1.1em;"
+       onclick="if (!/Mobi|Android/i.test(navigator.userAgent)) {
+         alert('Please use your phone to call this number.');
+         return false;
+       }">
+      +91 8767653587
+    </a>            </div>
+          </div>
+
+          <div class="info-item d-flex align-items-center">
+            <i class="bi bi-geo-alt-fill"></i>
+            <div class="ms-3">
+              <h6>Location</h6>
+              <p><a href="https://maps.app.goo.gl/Rc7d96xaEUgCqU6H8?g_st=ac" style="color: inherit; text-decoration:none;">Pune, India</a></p>
+
+            </div>
+          </div>
+
+          
+
+          
+        </div>
+      </div>
+
+    </div>
+    <br>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- scripts -->
+
+
+
+  <!-- Home -->
+
+
+  <script>
+    const typingEl = document.querySelector(".typing");
+    const words = ["Full Stack Developer", "Web Designer", "Coder"];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function typeEffect() {
+      const currentWord = words[wordIndex];
+
+      if (isDeleting) {
+        charIndex--;
+        if (charIndex < 0) charIndex = 0; 
+        typingEl.textContent = currentWord.substring(0, charIndex);
+      } else {
+        charIndex++;
+        typingEl.textContent = currentWord.substring(0, charIndex);
+      }
+
+      // pause
+      if (!isDeleting && charIndex === currentWord.length) {
+        isDeleting = true;
+        setTimeout(typeEffect, 1000); 
+        return;
+      }
+
+      // Move next word
+      if (isDeleting && charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+      }
+
+      setTimeout(typeEffect, isDeleting ? 100 : 150);
+    }
+
+    typeEffect();
+  </script>
+
+
+
+
+
+
+
+
+
+
+  <!-- skill -->
+
+   <script>
+// Progress bar 
+const progressBars = document.querySelectorAll(".skill-per");
+
+const progressObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      let percentage = parseInt(entry.target.parentNode.parentNode.querySelector("span").textContent.match(/(\d+)%/)[1]);
+      entry.target.style.width = "0%";
+      let width = 0;
+      let interval = setInterval(() => {
+        if (width >= percentage) clearInterval(interval);
+        else {
+          width += 2;
+          entry.target.style.width = width + "%";
+        }
+      }, 10);
+    } else {
+      entry.target.style.width = "0%";
+    }
+  });
+}, { threshold: 0.5 });
+
+progressBars.forEach(bar => {
+  bar.style.width = "0%";
+  progressObserver.observe(bar);
+});
+
+
+
+
+
+
+// Circle animation
+const circles = document.querySelectorAll(".circle");
+
+const circleObserver = new IntersectionObserver((entries) => {
+  if (entries[0].isIntersecting) {
+    circles.forEach(circle => {
+      let percent = parseInt(circle.getAttribute("data-percent"));
+      let count = 0;
+      let interval = setInterval(() => {
+        if (count >=percent) clearInterval(interval);
+        else {
+          count++;
+          let deg = (360 * count) / 100;
+          circle.style.background = `conic-gradient(#66ffff ${deg}deg, white ${deg}deg)`;
+          circle.querySelector("span").textContent = count + "%";
+        }
+      }, 25);
+    });
+  }
+}, { threshold: 0.5 });
+
+circles.forEach(circle => {
+  circleObserver.observe(circle);
+});
+</script>
+
+
+
+
+
+
+
+<!-- conatct me -->
+ <script>
+  const nameField = document.getElementById('name');
+
+  nameField.addEventListener('keypress', function (e) {
+    const char = String.fromCharCode(e.which);  
+    const regex = /^[A-Za-z\s]$/; 
+
+    if (!regex.test(char)) {
+      e.preventDefault(); 
+    }
+  });
+</script>
+
+<script>
+  document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault(); 
+    alert("✅Thank You! Your message has been sent Successfully!");
+this.reset();  });
+</script>
+
+
+
+
+
+
+<!-- section active highlight -->
+<script>
+const sections = document.querySelectorAll("section[id]");
+const navLinks = document.querySelectorAll(".nav-link");
+
+function scrollSpy() {
+  let current = "";
+
+  const scrollPosition = window.scrollY + window.innerHeight / 2; 
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+
+    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    if (link.getAttribute("href").includes(current)) {
+      link.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", scrollSpy);
+window.addEventListener("load", scrollSpy); 
+</script>
+
+
+<!-- Scrolling effect -->
+<script>
+    const sectionTitles = document.querySelectorAll(".section-title");
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          } else {
+            entry.target.classList.remove("visible");
+          }
+        });
+      },
+      { threshold: 0.5 } 
+    );
+
+    sectionTitles.forEach(title => {
+      observer.observe(title);
+    });
+  </script>
+
+
+<br><br>
+<footer style="text-align: center; padding: 10px 0;  color: #fff; font-family: Arial, sans-serif; font-size: 20px; padding-left: 2px; padding-right: 2px;">
+  <p>© 2025 Saniya Mulik. All rights reserved.</p>
+</footer>
+</body>
+</html>
+
