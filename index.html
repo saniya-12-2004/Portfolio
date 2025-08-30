@@ -1146,16 +1146,12 @@ circles.forEach(circle => {
 
 <!-- conatct me -->
  <script>
-  const nameField = document.getElementById('name');
+const nameField = document.getElementById('name');
 
-  nameField.addEventListener('keypress', function (e) {
-    const char = String.fromCharCode(e.which);  
-    const regex = /^[A-Za-z\s]$/; 
-
-    if (!regex.test(char)) {
-      e.preventDefault(); 
-    }
-  });
+nameField.addEventListener('input', function() {
+  // Sirf English letters aur space allow karega
+  this.value = this.value.replace(/[^A-Za-z\s]/g, "");
+});
 </script>
 
 <script>
@@ -1231,4 +1227,5 @@ window.addEventListener("load", scrollSpy);
 </footer>
 </body>
 </html>
+
 
