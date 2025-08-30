@@ -41,4 +41,5 @@ Check out my portfolio and projects to see my work in action!
 
 ## 🌐 Live Portfolio
 
-Check out my live portfolio here: [View Portfolio](https://username.github.io/portfolio/)
+Check out my live portfolio here: [View Portfolio](https://saniya-12-2004.github.io/Portfolio/)
+
