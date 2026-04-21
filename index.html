@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title >Portfolio</title>
 
-  <!-- bootstarap-reponsive -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -14,11 +13,9 @@
   />
 
 
-  <!-- Bootstrap Icons -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
   
 
-<!-- js -->
 <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
@@ -26,7 +23,6 @@
   ></script>
 
 
-  <!-- font-->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -129,11 +125,11 @@ scroll-margin-top: 220px;
 
 @media (max-width: 768px) {
   .offset {
-    height: 100px !important; /* thoda upar lane ke liye */
+    height: 100px !important; 
   }
 
   #img {
-    scroll-margin-top: 20px !important; /* mobile ke liye adjust */
+    scroll-margin-top: 20px !important; 
     padding-top: 10px;
   }
 
@@ -267,7 +263,7 @@ scroll-margin-top: 220px;
     .info-card {
       background:  #330033;
       border-radius: 16px;
-      padding: 15px 10px; /* kam padding */
+      padding: 15px 10px; 
   margin: 3px;
   font-size: 0.8rem; 
   margin-bottom: 8px;
@@ -339,16 +335,16 @@ scroll-margin-top: 220px;
     }
 
     .qualification-item:hover {
-  background-color: #66ffff; /* light blue background on hover */
+  background-color: #66ffff; 
   box-shadow: 0 8px 20px rgba(102, 255, 255, 0.4);
-  border-left-color: black; /* border left color change */
+  border-left-color: black; 
   cursor: pointer;
   transition: background-color 0.3s ease, box-shadow 0.3s ease, border-left-color 0.3s ease;
 }
 
 .qualification-item:hover h3,
 .qualification-item:hover p {
-  color: black; /* text color change on hover */
+  color: black; 
   transition: color 0.3s ease;
 }
 
@@ -382,7 +378,7 @@ scroll-margin-top: 220px;
 
 @media (max-width: 768px) {
   .skills-container {
-    grid-template-columns: 1fr; /* ek column */
+    grid-template-columns: 1fr;
     gap: 25px;
   }
 }
@@ -490,16 +486,16 @@ padding-left: 20px;
   display: block;
 }
 
-/* ✅ Overlay puri image cover kare */
+
 .project-card .overlay {
   position: absolute;
-  top: 0;          /* top se start */
-  left: 0;         /* left se start */
-  right: 0;        /* right tak stretch */
-  bottom: 0;       /* bottom tak stretch */
+  top: 0;         
+  left: 0;         
+  right: 0;        
+  bottom: 0;       
   background: rgba(0,0,0,0.75);
   color: #fff;
-  display: flex;              /* content ko center karne ke liye */
+  display: flex;              
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -510,7 +506,7 @@ padding-left: 20px;
 }
 
 .project-card:hover .overlay {
-  opacity: 1;      /* ✅ hover par puri image cover karega */
+  opacity: 1;      
 }
 
 .project-card .overlay h3 {
@@ -520,19 +516,19 @@ padding-left: 20px;
 }
     
 .project-buttons {
-  display: flex;              /* side by side */
-  gap: 15px;                  /* buttons ke beech space */
-  flex-wrap: wrap;             /* agar mobile chhota ho to neeche aa jaye nicely */
-  justify-content: center;     /* center me align */
+  display: flex;              
+  gap: 15px;                 
+  flex-wrap: wrap;             
+  justify-content: center;    
   margin-top: 12px;
 }
 
 .project-buttons .btn {
-  flex: 0 0 auto;              /* thoda responsive size */
+  flex: 0 0 auto;             
   min-width: 120px; 
   border-radius: 25px; 
   padding: 8px 18px; 
-  margin: 0 5px;      /* minimum button size */
+  margin: 0 5px;     
 }
     
 
@@ -601,7 +597,7 @@ form button {
 form button:hover {
   background:#330033;
   box-shadow: 0 0 20px #330033;
-  transform: scale(1.05) translateY(-3px);  /* bounce + zoom */
+  transform: scale(1.05) translateY(-3px);  
 }
 
 
@@ -813,14 +809,14 @@ form button:hover {
 
      
       <div class="row justify-content-center mt-5">
-        <div class="col-12 col-md-4">
+        <!-- <div class="col-12 col-md-4">
           <div class="info-card">
             <i class="fas fa-user"></i>
             <h5>Marital Status</h5>
             <p>Single</p>
           </div>
-        </div>
-        <div class="col-12 col-md-4">
+        </div> -->
+        <div class="col-12 col-md-6">
           <div class="info-card">
             <i class="fas fa-map-marker-alt"></i>
              <h5>Location</h5>
@@ -829,11 +825,12 @@ form button:hover {
             
           </div>
         </div>
-        <div class="col-12 col-md-4">
+        <div class="col-12 col-md-6">
           <div class="info-card">
             <i class="fas fa-envelope"></i>
             <h5>Email</h5>
-<p><a href="https://mail.google.com/mail/u/0/#inbox" style="color: inherit; text-decoration:none;">muliksaniya6@gmail.com</a></p>
+<p> <a href="mailto:muliksaniya6@gmail.com" style="color: inherit; text-decoration:none;">
+    muliksaniya6@gmail.com</a></p>
   
           </div>
         </div>
@@ -874,7 +871,7 @@ form button:hover {
 <br>
   <div class="skills-container">
     
-    <!--  Bars -->
+
     <div>
       <div class="skill">
        <h2 style="color: #fff;">Technical Skill</h2>
@@ -914,7 +911,7 @@ form button:hover {
 
     </div>
 
-    <!--  Circles -->
+
 <div>
   <h2 style="color:white; text-align: center; margin-bottom: 20px;">Soft Skills</h2>
   <br><div class="circle-container">
@@ -969,7 +966,7 @@ Communication"><span>0%</span></div>
     <br><h2 class="text-center section-title">Contact Me</h2>
     <div class="row g-4 align-items-stretch">
       
-      <!-- Left -->
+    
       <div class="col-md-6">
         <form id="contactForm">
           <div class="mb-3">
@@ -987,7 +984,7 @@ Communication"><span>0%</span></div>
 
         </div>
 
-      <!-- Right  -->
+
       <div class="col-md-6">
         <div class="contact-info h-60">
           <h5>Get in Touch</h5>
@@ -1170,7 +1167,7 @@ circles.forEach(circle => {
 const nameField = document.getElementById('name');
 
 nameField.addEventListener('input', function() {
-  // Sirf English letters aur space allow karega
+  
   this.value = this.value.replace(/[^A-Za-z\s]/g, "");
 });
 </script>
