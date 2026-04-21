@@ -33,7 +33,7 @@ Check out my portfolio and projects to see my work in action!
 
 ## 📫 Contact Me
 
-- *Email: [muliksaniya6@gmail.com](https://mail.google.com/mail/u/0/#inbox)
+- *Email: [muliksaniya6@gmail.com](mailto:muliksaniya6@gmail.com)
 - *LinkedIn:https://www.linkedin.com/in/saniya-mulik
 - *GitHub: https://github.com/saniya-12-2004
 
